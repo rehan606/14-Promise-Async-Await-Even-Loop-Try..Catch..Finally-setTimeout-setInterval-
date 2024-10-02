@@ -2,7 +2,7 @@
 
 
 
-## Promise --------------------------------
+## Promise :
 ``` JS
 const myLoder = () => {
     return new Promise((resolve, reject) => {
@@ -22,7 +22,7 @@ myLoder()
 ```
 
 
-## Async/Await ----------------------------
+## Async/Await :
 
 ``` JS
 async function loadData(){
@@ -35,7 +35,7 @@ loadData()
 
 ```
 
-##  Async/Await Using Arrow Function 
+##  Async/Await Using Arrow Function :
 ``` JS
 const taskLoader = async() => {
     const response = await fetch('');
@@ -47,10 +47,12 @@ taskLoader()
 
 ```
 
-## Try..Catch..Finally --------------------
+## Try..Catch..Finally :
 
 **TRY**: The try statement defines a code block to run ( to try)
+
 **CATCH**: The catch statement defines a code block to any error.
+
 **FINALLY**: The finally statement defines a code block to run Regurdless of the Result.
 
 
@@ -77,7 +79,7 @@ finally{
         Finally will Execute EveryTime
 ```
 
-## setTimeout and CrearTimeout-------------
+## setTimeout and CrearTimeout :
 
 **SET TIME OUT**: A Time event function used to call another function after 
                certain time period but ececutes the function only once.
@@ -98,7 +100,7 @@ console.log(6)
 
 ```
 
-## setInterval and clearInterval ----------
+## setInterval and clearInterval :
 
 **SetInterval**: Same as setTimeout() with a slice difference that the 
               execution ot the function occurs continuously accouding to the
@@ -121,7 +123,7 @@ const timerId = setInterval(() => {
 },1000)
 ```
 
-## Even Loop ------------------------------
+## Even Loop :
 ``` JS
 function a(){
     console.log('a')
@@ -141,11 +143,10 @@ function c(){
 }
 ```
 
-**-------------------------------------------------------------------------
--------------**Explore More About Async/Await and Promiseall**---------------
-**-------------------------------------------------------------------------
 
-## Fetch
+-------------**Explore More About Async/Await and Promiseall**---------------
+
+## Fetch :
 ```js
 function loadUser (){
     fetch('https://jsonplaceholder.typicode.com/users')
@@ -162,7 +163,7 @@ function loadUser (){
 }
 ```
 
-## Async 
+## Async :
 ```js 
 async function loadUserAsync () {
     const response = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -177,7 +178,7 @@ async function loadUserAsync () {
 ```
 
 
-## Async Arrow Function
+## Async Arrow Function :
 
 ```js
 const loadUserAsyncArrow = async() => {
@@ -192,7 +193,7 @@ const loadUserAsyncArrow = async() => {
 }
 ```
 
-## Async Try Catch
+## Async Try Catch :
 
 ```js
 const loadUserCatch = async() => {
