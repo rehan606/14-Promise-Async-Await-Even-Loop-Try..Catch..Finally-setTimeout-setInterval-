@@ -79,7 +79,7 @@ finally{
         Finally will Execute EveryTime
 ```
 
-## setTimeout and CrearTimeout :
+## SetTimeout and CrearTimeout :
 
 **SET TIME OUT**: A Time event function used to call another function after 
                certain time period but ececutes the function only once.
@@ -100,7 +100,7 @@ console.log(6)
 
 ```
 
-## setInterval and clearInterval :
+## SetInterval and clearInterval :
 
 **SetInterval**: Same as setTimeout() with a slice difference that the 
               execution ot the function occurs continuously accouding to the
