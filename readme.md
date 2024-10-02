@@ -144,7 +144,8 @@ function c(){
 ```
 
 
--------------*Explore More About Async/Await and Promiseall*---------------
+
+<h2 align="center">-------------*Explore More About Async/Await and Promiseall*---------------</h2>
 
 ## Fetch :
 ```js
