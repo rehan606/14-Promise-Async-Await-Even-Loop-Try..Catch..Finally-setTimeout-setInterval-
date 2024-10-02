@@ -4,20 +4,20 @@
 
 ## Promise :
 ``` JS
-const myLoder = () => {
-    return new Promise((resolve, reject) => {
-        const success = 50;
-        if(success >= 40){
-            resolve(success)
-        }
-        else{
-            reject(success)
-        }
-    })
-}
-myLoder()
-.then(data => console.log('Resolved', data))
-.catch(error => console.log('Error', error))
+    const myLoder = () => {
+        return new Promise((resolve, reject) => {
+            const success = 50;
+            if(success >= 40){
+                resolve(success)
+            }
+            else{
+                reject(success)
+            }
+        })
+    }
+    myLoder()
+    .then(data => console.log('Resolved', data))
+    .catch(error => console.log('Error', error))
 
 ```
 
@@ -25,25 +25,25 @@ myLoder()
 ## Async/Await :
 
 ``` JS
-async function loadData(){
-    const response = await fetch('https://jsonplaceholder.typicode.com/users')
-    const data = await response.json();
-    console.log(data)
-}
+    async function loadData(){
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+        const data = await response.json();
+        console.log(data)
+    }
 
-loadData()
+    loadData()
 
 ```
 
 ##  Async/Await Using Arrow Function :
 ``` JS
-const taskLoader = async() => {
-    const response = await fetch('');
-    const data = await response.json();
-    console.log(data)
-}
+    const taskLoader = async() => {
+        const response = await fetch('');
+        const data = await response.json();
+        console.log(data)
+    }
 
-taskLoader()
+    taskLoader()
 
 ```
 
@@ -57,18 +57,18 @@ taskLoader()
 
 
 ``` JS 
-const n = 100 , d = 10;
+    const n = 100 , d = 10;
 
-try{
-    console.log(n/d)
-    console.log(a);
-}
-catch(error){
-    console.log('Error Message:' + error);
-}
-finally{
-    console.log('finally will Execute EveryTime')
-}
+    try{
+        console.log(n/d)
+        console.log(a);
+    }
+    catch(error){
+        console.log('Error Message:' + error);
+    }
+    finally{
+        console.log('finally will Execute EveryTime')
+    }
 
 ```
 
@@ -88,15 +88,15 @@ finally{
 
 ``` JS
 
-console.log(1)
-console.log(2)
+    console.log(1)
+    console.log(2)
 
-setTimeout(() => {
-    console.log(4)
-}, 1000)
+    setTimeout(() => {
+        console.log(4)
+    }, 1000)
 
-console.log(5)
-console.log(6)
+    console.log(5)
+    console.log(6)
 
 ```
 
@@ -112,35 +112,35 @@ console.log(6)
 
 ``` JS
 
-let number = 0;
-const timerId = setInterval(() => {
-    number++
+    let number = 0;
+    const timerId = setInterval(() => {
+        number++
 
-    if(number > 9){
-        clearInterval(timerId)
-    }
-    console.log(number)
-},1000)
+        if(number > 9){
+            clearInterval(timerId)
+        }
+        console.log(number)
+    },1000)
 ```
 
 ## Even Loop :
 ``` JS
-function a(){
-    console.log('a')
-    b();
-    console.log('aa')
-}
+    function a(){
+        console.log('a')
+        b();
+        console.log('aa')
+    }
 
-function b(){
-    console.log('b')
-    c();
-    console.log('bb')
-}
+    function b(){
+        console.log('b')
+        c();
+        console.log('bb')
+    }
 
-function c(){
-    console.log('c')
-    console.log('cc')
-}
+    function c(){
+        console.log('c')
+        console.log('cc')
+    }
 ```
 
 
@@ -149,67 +149,67 @@ function c(){
 
 ## Fetch :
 ```js
-function loadUser (){
-    fetch('https://jsonplaceholder.typicode.com/users')
-    .then(response => response.json())
-    .then(data => {
-        
-        const fetch = document.getElementById('fetch')
-        const li = document.createElement('li')
-        li.textContent = ` ${data[0].id}, ${data[0].name}`
+    function loadUser (){
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then(response => response.json())
+        .then(data => {
+            
+            const fetch = document.getElementById('fetch')
+            const li = document.createElement('li')
+            li.textContent = ` ${data[0].id}, ${data[0].name}`
 
-        fetch.appendChild(li)
-    })
-    .catch(error => console.log(error))
-}
+            fetch.appendChild(li)
+        })
+        .catch(error => console.log(error))
+    }
 ```
 
 ## Async :
 ```js 
-async function loadUserAsync () {
-    const response = await fetch('https://jsonplaceholder.typicode.com/users')
-    const data = await response.json();
+    async function loadUserAsync () {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+        const data = await response.json();
 
-    const async = document.getElementById('async')
-    const li = document.createElement('li')
-    li.textContent = ` ${data[1].id}, ${data[1].name}`
+        const async = document.getElementById('async')
+        const li = document.createElement('li')
+        li.textContent = ` ${data[1].id}, ${data[1].name}`
 
-    async.appendChild(li)
-}
+        async.appendChild(li)
+    }
 ```
 
 
 ## Async Arrow Function :
 
 ```js
-const loadUserAsyncArrow = async() => {
-    const response = await fetch('https://jsonplaceholder.typicode.com/users')
-    const data = await response.json();
-    
-    const arrowAsync = document.getElementById('arrow-async')
-    const li = document.createElement('li')
-    li.textContent = ` ${data[2].id}, ${data[2].name}`
+    const loadUserAsyncArrow = async() => {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+        const data = await response.json();
+        
+        const arrowAsync = document.getElementById('arrow-async')
+        const li = document.createElement('li')
+        li.textContent = ` ${data[2].id}, ${data[2].name}`
 
-    arrowAsync.appendChild(li)
-}
+        arrowAsync.appendChild(li)
+    }
 ```
 
 ## Async Try Catch :
 
 ```js
-const loadUserCatch = async() => {
-    try{
-        const response = await fetch('https://jsonplaceholder.typicode.com/users')
-        const data = await response.json();
-        
-        const tryCatch = document.getElementById('try-catch')
-        const li = document.createElement('li')
-        li.textContent = ` ${data[3].id}, ${data[3].name}`
+    const loadUserCatch = async() => {
+        try{
+            const response = await fetch('https://jsonplaceholder.typicode.com/users')
+            const data = await response.json();
+            
+            const tryCatch = document.getElementById('try-catch')
+            const li = document.createElement('li')
+            li.textContent = ` ${data[3].id}, ${data[3].name}`
 
-        tryCatch.appendChild(li)
-    }
-    catch(error){
+            tryCatch.appendChild(li)
+        }
+        catch(error){
 
+        }
     }
-}
 ```
